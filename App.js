@@ -36,20 +36,20 @@ export default class App extends Component {
             <Header/>
 
                 <View style={styles.main}>
-                    <CityNav imgLoc="barcelona.jpg" />
-                    <CityNav imgLoc="barcelona.jpg"/>
+                    <CityNav  />
+                    <CityNav />
                 </View>
                 <View style={styles.main}>
-                    <CityNav imgLoc="barcelona.jpg"/>
-                    <CityNav imgLoc="barcelona.jpg"/>
+                    <CityNav />
+                    <CityNav />
                 </View>
                 <View style={styles.main}>
-                    <CityNav imgLoc="barcelona.jpg"/>
-                    <CityNav imgLoc="barcelona.jpg" />
+                    <CityNav />
+                    <CityNav  />
                 </View>
                 <View style={styles.main}>
-                    <CityNav imgLoc="barcelona.jpg"/>
-                    <CityNav imgLoc="barcelona.jpg"/>
+                    <CityNav />
+                    <CityNav />
                 </View>
             </SafeAreaView>
 

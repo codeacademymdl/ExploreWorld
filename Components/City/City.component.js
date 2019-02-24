@@ -10,15 +10,19 @@ export default class CityNav extends Component {
     // a=this.props.imgLoc
     //const imagePath = require('./../../Images/'.concat(this.props.data.image));
     // location=require('./'.concat(this.props.imgLoc))
-    location=require('./barcelona.jpg')
+    
+    
+    
     render() {
-        console.log("this is props",this.props)
-        console.log("sdfsd")
+       
+
+        let location=require('./barcelona.jpg')
+        // console.log(this.props.imgLoc)
         
         return (    
             
-            <View style={{borderRadius:20}}>
-                <ImageBackground source={this.location} style={styles.dimension} >
+            <View style={styles.main}>
+                <ImageBackground source={require('./barcelona.jpg')} style={styles.dimension} imageStyle={{ borderRadius: 20 }} >
                     <View style={styles.content}>
                         <Text style={styles.fontStyle}>Barcelona</Text>
                     </View>
