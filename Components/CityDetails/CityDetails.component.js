@@ -2,7 +2,10 @@ import React, { Component } from 'react';
 import { StyleSheet, View, Text, Image, ImageBackground, ScrollView, TouchableHighlight } from 'react-native';
 import styles from './CityDetails.style'
 // import { ScrollView } from 'react-native-gesture-handler';
+
+import Tags from '../Tags/Tags.component'
 export default class DetailsScreen extends Component {
+
     render() {
         return (
             <ScrollView>
@@ -28,30 +31,19 @@ export default class DetailsScreen extends Component {
 
                         </View>
                         <View style={styles.box} >
-                            <Text style={styles.heading1}>Tags</Text>
+                            <Text style={[styles.heading1,{marginBottom:10}]}>Tags</Text>
                             <View style={styles.tags}>
-                                <TouchableHighlight style={styles.button}>
-                                    <Text> Facade</Text>
-                                </TouchableHighlight>
-                                <TouchableHighlight style={styles.button}>
-                                    <Text> Facade</Text>
-                                </TouchableHighlight>
-                                <TouchableHighlight style={styles.button}>
-                                    <Text> Facade</Text>
-                                </TouchableHighlight>
-                                <TouchableHighlight style={styles.button}>
-                                    <Text> Facade</Text>
-                                </TouchableHighlight>
-                                                                                            
+                                <Tags text="Facade"/>
+                                <Tags text="Outside" />
+                                <Tags text="Bedroom"/>
+                                <Tags text="People"/>
+
                             </View>
                             <View style={styles.tags}>
-                                <TouchableHighlight style={styles.button}>
-                                    <Text> Facade</Text>
-                                </TouchableHighlight>  
-                                <TouchableHighlight style={styles.button}>
-                                    <Text> Facade</Text>
-                                </TouchableHighlight>  
-                                </View>
+                                <Tags text="Restaurant"/>
+                                <Tags text="Bar"/>
+                                <Tags text="Other"/>
+                            </View>
 
 
 

@@ -57,7 +57,7 @@ export default StyleSheet.create({
     button: {
 
        
-        backgroundColor: '#f5f5f6',
+        // backgroundColor: '#f5f5f6',
         padding: 10,
         height:40,
         width:80,
@@ -71,11 +71,8 @@ export default StyleSheet.create({
         flexDirection: 'row',
         justifyContent:"space-evenly",
         marginBottom:10,
-        
-      
-        
-
-    }
+    
+    },
 
 
 });
