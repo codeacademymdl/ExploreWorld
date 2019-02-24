@@ -34,8 +34,9 @@ export default class HomeScreen extends Component {
         return (
             
         <ScrollView >
-            <SafeAreaView style={{ flex: 1, backgroundColor: "white" }}>
             <Header/>
+            <SafeAreaView style={{ flex: 1, backgroundColor: "white" }}>
+            
 
                 <View style={styles.main}>
               
