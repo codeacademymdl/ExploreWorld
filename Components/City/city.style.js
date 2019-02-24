@@ -2,10 +2,10 @@ import { StyleSheet } from 'react-native';
 
 export default StyleSheet.create({
     dimension: {
-        width: 170,
-        height: 160,
+        width: 175,
+        height: 200,
         borderRadius: 100,
-        opacity:0.8
+        opacity:0.75
     },
 
     content: {
