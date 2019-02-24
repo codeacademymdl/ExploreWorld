@@ -12,8 +12,9 @@ import { Platform, StyleSheet, Text, FlatList, View, Image, SectionList, ScrollV
 // import axios from 'axios'
 import HomeScreen from './Components/Home/Home.component'
 import { createStackNavigator, createAppContainer } from 'react-navigation';
-import DetailsScreen from './Screen2'
+
 import CityNav from './Components/City/City.component'
+import CityDetails from './Components/CityDetails/CityDetails.component'
 
 // const instructions = Platform.select({
 //   ios: 'Press Cmd+R to reload,\n' + 'Cmd+D or shake for dev menu',
@@ -39,12 +40,12 @@ export default class App extends Component {
 const AppStackNavigator = createStackNavigator(
     {
         Home: HomeScreen,
-        Details: DetailsScreen,
+        Details: CityDetails,
         City:CityNav
 
     }, {
 
-        initialRouteName: "Home"
+        initialRouteName: "Details"
     });
 
 const AppContainer=createAppContainer(AppStackNavigator);
