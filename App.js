@@ -10,11 +10,10 @@
 import React, { Component } from 'react';
 import { Platform, StyleSheet, Text, FlatList, View, Image, SectionList, ScrollView, ActivityIndicator, SafeAreaView } from 'react-native';
 // import axios from 'axios'
-import CityNav from './Components/City/City.component';
-import styles from './App.style'
-
-import Header from './Components/Header/Header.component'
-
+import HomeScreen from './Components/Home/Home.component'
+import { createStackNavigator, createAppContainer } from 'react-navigation';
+import DetailsScreen from './Screen2'
+import CityNav from './Components/City/City.component'
 
 // const instructions = Platform.select({
 //   ios: 'Press Cmd+R to reload,\n' + 'Cmd+D or shake for dev menu',
@@ -29,33 +28,23 @@ export default class App extends Component {
     render() {
 
         return (
-            
 
-            
-            <SafeAreaView style={{ flex: 1, backgroundColor: "white" }}>
-            <Header/>
-
-                <View style={styles.main}>
-                    <CityNav  />
-                    <CityNav />
-                </View>
-                <View style={styles.main}>
-                    <CityNav />
-                    <CityNav />
-                </View>
-                <View style={styles.main}>
-                    <CityNav />
-                    <CityNav  />
-                </View>
-                <View style={styles.main}>
-                    <CityNav />
-                    <CityNav />
-                </View>
-            </SafeAreaView>
-
+            <AppContainer />
 
         );
     }
 }
 
 
+const AppStackNavigator = createStackNavigator(
+    {
+        Home: HomeScreen,
+        Details: DetailsScreen,
+        City:CityNav
+
+    }, {
+
+        initialRouteName: "Home"
+    });
+
+const AppContainer=createAppContainer(AppStackNavigator);

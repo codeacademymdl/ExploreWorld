@@ -24,6 +24,14 @@ export default StyleSheet.create({
         fontWeight:"bold"
 
     },
+    date:{
+        opacity:1,
+        color:"white",
+        fontSize:15,
+        fontWeight:"bold",
+        fontStyle:"italic"
+
+    },
     main:{
         shadowRadius: 5,
         shadowOpacity: 0.6,

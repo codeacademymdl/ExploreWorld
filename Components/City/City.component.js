@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Platform, StyleSheet, Text, View, ImageBackground, } from 'react-native';
+import { Platform, StyleSheet,Button, Text, View, ImageBackground, TouchableHighlight } from 'react-native';
 
 import styles from './city.style'
 
@@ -12,6 +12,8 @@ export default class CityNav extends Component {
     // location=require('./'.concat(this.props.imgLoc))
     
     
+
+    
     
     render() {
        
@@ -20,14 +22,19 @@ export default class CityNav extends Component {
         // console.log(this.props.imgLoc)
         
         return (    
-            
-            <View style={styles.main}>
+
+          
+          
+            <View style={styles.main} >
+           
                 <ImageBackground source={require('./barcelona.jpg')} style={styles.dimension} imageStyle={{ borderRadius: 20 }} >
                     <View style={styles.content}>
                         <Text style={styles.fontStyle}>Barcelona</Text>
+                        <Text style={styles.date}>6th January 2019</Text>
                     </View>
                 </ImageBackground>
             </View>
+
 
         )
 
