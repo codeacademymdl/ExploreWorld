@@ -31,20 +31,22 @@ export default class DetailsScreen extends Component {
 
                         </View>
                         <View style={styles.box} >
-                            <Text style={[styles.heading1,{marginBottom:10}]}>Tags</Text>
-                            <View style={styles.tags}>
-                                <Tags text="Facade"/>
-                                <Tags text="Outside" />
-                                <Tags text="Bedroom"/>
-                                <Tags text="People"/>
+                            <Text style={[styles.heading1, { marginBottom: 10 }]}>Tags</Text>
+                          
 
-                            </View>
-                            <View style={styles.tags}>
-                                <Tags text="Restaurant"/>
-                                <Tags text="Bar"/>
-                                <Tags text="Other"/>
-                            </View>
+                                <View style={styles.tags}>
+                                    <Tags text="Facade" />
+                                    <Tags text="Outside" />
+                                    <Tags text="Bedroom" />
 
+
+                                </View>
+                                <View style={styles.tags}>
+                                    <Tags text="Restaurant" />
+                                    <Tags text="Bar" />
+                                    <Tags text="Other" />
+                                </View>
+                            
 
 
 

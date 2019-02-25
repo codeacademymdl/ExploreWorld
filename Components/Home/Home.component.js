@@ -42,22 +42,22 @@ export default class HomeScreen extends Component {
               
           <TouchableOpacity underlayColor="blue" onPress={() => this.props.navigation.navigate('Details')}>
 
-                    <CityNav   />
+                    <CityNav  name="barcelona" date="10 February 2019"/>
         </TouchableOpacity>
-                    <CityNav />
+                    <CityNav name="london" date="1 January 2019"/>
                     
                 </View>
                 <View style={styles.main}>
-                    <CityNav />
-                    <CityNav />
+                    <CityNav name="newyork" date="10 December 2018" />
+                    <CityNav name="paris"  date="22 August 2018"/>
                 </View>
                 <View style={styles.main}>
-                    <CityNav />
-                    <CityNav  />
+                    <CityNav name="langkawi" date="25 December 2018"/>
+                    <CityNav name="vegas" date="20 November 2019" />
                 </View>
                 <View style={styles.main}>
-                    <CityNav />
-                    <CityNav />
+                    <CityNav name="sydney" date="10 March 2018"/>
+                    <CityNav name="barcelona" date="20 Feb 2018"/>
                 </View>
             </SafeAreaView>
 </ScrollView>

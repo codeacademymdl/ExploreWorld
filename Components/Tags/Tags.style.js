@@ -6,10 +6,11 @@ export default StyleSheet.create({
   
         // backgroundColor: '#f5f5f6',
         padding: 10,
-        height:40,
-        width:80,
+        height:35,
+        width:100,
         borderRadius:30,
         alignItems: 'center',
+        
 
     },
 });

@@ -20,7 +20,7 @@ export default StyleSheet.create({
     fontStyle:{
         opacity:1,
         color:"white",
-        fontSize:30,
+        fontSize:25,
         fontWeight:"bold"
 
     },

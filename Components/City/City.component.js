@@ -6,20 +6,32 @@ import styles from './city.style'
 
 export default class CityNav extends Component {
 
-    //  location = require(`./${this.props.name}.jpg`)
-    // a=this.props.imgLoc
-    //const imagePath = require('./../../Images/'.concat(this.props.data.image));
-    // location=require('./'.concat(this.props.imgLoc))
-    
-    
 
+    
+    
+AllImages={
+
+// barcelona:require('./barcelona.jpg'),
+// london:require('./london.jpg'),
+// newyork:require('./newyork1.jpg'),
+// langkawi:require('./langkawi.jpg'),
+// paris:require('./paris.jpg'),
+// sydney:require('./sydney.jpg'),
+// vegas:require('./vegas.jpg'),
+barcelona:require('../../src/assets/city/barcelona.jpg'),
+london:require('../../src/assets/city/london.jpg'),
+newyork:require('../../src/assets/city/newyork1.jpg'),
+langkawi:require('../../src/assets/city/langkawi.jpg'),
+paris:require('../../src/assets/city/paris.jpg'),
+sydney:require('../../src/assets/city/sydney.jpg'),
+vegas:require('../../src/assets/city/vegas.jpg')
+
+}
     
     
     render() {
        
 
-        let location=require('./barcelona.jpg')
-        // console.log(this.props.imgLoc)
         
         return (    
 
@@ -27,10 +39,10 @@ export default class CityNav extends Component {
           
             <View style={styles.main} >
            
-                <ImageBackground source={require('./barcelona.jpg')} style={styles.dimension} imageStyle={{ borderRadius: 20 }} >
+                <ImageBackground source={this.AllImages[this.props.name]} style={styles.dimension} imageStyle={{ borderRadius: 20 }} >
                     <View style={styles.content}>
-                        <Text style={styles.fontStyle}>Barcelona</Text>
-                        <Text style={styles.date}>6th January 2019</Text>
+                        <Text style={styles.fontStyle}>{this.props.name.toUpperCase()}</Text>
+                        <Text style={styles.date}>{this.props.date}</Text>
                     </View>
                 </ImageBackground>
             </View>
